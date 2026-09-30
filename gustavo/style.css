@@ -1,0 +1,473 @@
+/* =========================
+   CONFIGURAÇÕES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    min-height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    color: white;
+
+    background:
+        radial-gradient(
+            circle at top,
+            #18243d 0%,
+            #070b14 45%,
+            #020308 100%
+        );
+
+    padding: 25px 15px;
+}
+
+
+/* =========================
+   ESTRELAS
+========================= */
+
+body::before {
+
+    content: "";
+
+    position: fixed;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    opacity: 0.5;
+
+    background-image:
+        radial-gradient(
+            white 1px,
+            transparent 1px
+        );
+
+    background-size: 90px 90px;
+
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+
+    width: 100%;
+
+    max-width: 700px;
+
+    margin: auto;
+
+    position: relative;
+
+    z-index: 1;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.cabecalho {
+
+    text-align: center;
+
+    padding: 30px 20px;
+
+    margin-bottom: 20px;
+
+    background:
+        rgba(5, 10, 20, 0.95);
+
+    border: 2px solid #ffe81f;
+
+    border-radius: 6px;
+
+    box-shadow:
+        0 0 15px rgba(255, 232, 31, 0.25);
+}
+
+.logo {
+
+    color: #ffe81f;
+
+    font-size: 40px;
+
+    margin-bottom: 10px;
+
+    text-shadow:
+        0 0 15px #ffe81f;
+}
+
+.cabecalho h1 {
+
+    color: #ffe81f;
+
+    font-size: 1.8rem;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+}
+
+.cabecalho p {
+
+    color: #aeb8c5;
+
+    font-size: 0.85rem;
+
+    letter-spacing: 1px;
+}
+
+.status {
+
+    margin-top: 15px;
+
+    color: #00ff66;
+
+    font-size: 0.75rem;
+
+    letter-spacing: 2px;
+
+    text-shadow:
+        0 0 8px #00ff66;
+}
+
+
+/* =========================
+   BLOCOS
+========================= */
+
+.bloco {
+
+    background:
+        rgba(8, 13, 23, 0.96);
+
+    border: 1px solid #344052;
+
+    border-left: 4px solid #00aaff;
+
+    border-radius: 5px;
+
+    padding: 22px;
+
+    margin-bottom: 18px;
+
+    box-shadow:
+        0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+.bloco h2 {
+
+    color: #ffe81f;
+
+    font-size: 0.95rem;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 20px;
+
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid #293343;
+}
+
+.pergunta {
+
+    color: #ffffff;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+
+    line-height: 1.5;
+}
+
+
+/* =========================
+   INPUT NOME
+========================= */
+
+input[type="text"],
+select,
+textarea {
+
+    width: 100%;
+
+    padding: 13px;
+
+    color: white;
+
+    background: #050811;
+
+    border: 1px solid #39485a;
+
+    border-radius: 4px;
+
+    font-size: 1rem;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+
+    border-color: #00aaff;
+
+    box-shadow:
+        0 0 10px rgba(0, 170, 255, 0.3);
+}
+
+textarea {
+
+    min-height: 100px;
+
+    resize: vertical;
+}
+
+
+/* =========================
+   LABEL
+========================= */
+
+label {
+
+    display: block;
+
+    color: #00aaff;
+
+    font-size: 0.85rem;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+/* =========================
+   OPÇÕES
+========================= */
+
+.opcoes {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+.opcao {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px;
+
+    color: #dce4ed;
+
+    background: #080e19;
+
+    border: 1px solid #293646;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.opcao:hover {
+
+    border-color: #00aaff;
+
+    background: #0b1725;
+
+    transform: translateX(3px);
+}
+
+.opcao input {
+
+    accent-color: #ffe81f;
+
+    transform: scale(1.2);
+}
+
+.opcao span {
+
+    color: #ffffff;
+}
+
+
+/* =========================
+   BOTÃO
+========================= */
+
+button {
+
+    width: 100%;
+
+    padding: 15px;
+
+    margin-top: 5px;
+
+    color: #050505;
+
+    background: #ffe81f;
+
+    border: none;
+
+    border-radius: 4px;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 0 10px rgba(255, 232, 31, 0.25);
+}
+
+button:hover {
+
+    background: #fff36a;
+
+    box-shadow:
+        0 0 15px #ffe81f;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   RESULTADO
+========================= */
+
+.resultado {
+
+    text-align: center;
+
+    padding: 40px 25px;
+
+    background:
+        rgba(5, 12, 20, 0.97);
+
+    border: 2px solid #ffe81f;
+
+    border-radius: 6px;
+
+    box-shadow:
+        0 0 25px rgba(255, 232, 31, 0.2);
+}
+
+.resultado-icon {
+
+    color: #ffe81f;
+
+    font-size: 50px;
+
+    text-shadow:
+        0 0 20px #ffe81f;
+
+    margin-bottom: 15px;
+}
+
+.resultado h2 {
+
+    color: #ffe81f;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.resultado p {
+
+    color: #c8d0d9;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+.escondido {
+
+    display: none;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer {
+
+    text-align: center;
+
+    margin-top: 25px;
+
+    color: #657284;
+
+    font-size: 0.75rem;
+
+    line-height: 1.8;
+
+    letter-spacing: 1px;
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 600px) {
+
+    body {
+
+        padding: 15px 10px;
+    }
+
+    .cabecalho h1 {
+
+        font-size: 1.35rem;
+
+        letter-spacing: 2px;
+    }
+
+    .bloco {
+
+        padding: 18px;
+    }
+
+    .opcao {
+
+        padding: 14px 10px;
+    }
+
+    button {
+
+        padding: 16px;
+    }
+}

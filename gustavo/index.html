@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Feedback - Conexão CEEP | Star Wars</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- CABEÇALHO -->
+
+        <header class="cabecalho">
+
+            <div class="logo">★</div>
+
+            <h1>FEEDBACK DA MISSÃO</h1>
+
+            <p>
+                CONEXÃO CEEP • 2º ANO DO ENSINO MÉDIO
+            </p>
+
+            <div class="status">
+                ● SISTEMA ONLINE
+            </div>
+
+        </header>
+
+
+        <!-- FORMULÁRIO -->
+
+        <form id="feedbackForm">
+
+            <!-- IDENTIFICAÇÃO -->
+
+            <section class="bloco">
+
+                <h2>01 // IDENTIFICAÇÃO</h2>
+
+                <label for="nome">
+                    Seu nome
+                </label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Digite seu nome"
+                    required
+                >
+
+            </section>
+
+
+            <!-- PERGUNTA 1 -->
+
+            <section class="bloco">
+
+                <h2>02 // A MISSÃO</h2>
+
+                <p class="pergunta">
+                    Você gostou do trabalho apresentado?
+                </p>
+
+                <div class="opcoes">
+
+                    <label class="opcao">
+                        <input
+                            type="radio"
+                            name="gostou"
+                            value="5"
+                            required
+                        >
+                        <span>🚀 Sim, gostei muito!</span>
+                    </label>
+
+                    <label class="opcao">
+                        <input
+                            type="radio"
+                            name="gostou"
+                            value="4"
+                        >
+                        <span>👍 Gostei</span>
+                    </label>
+
+                    <label class="opcao">
+                        <input
+                            type="radio"
+                            name="gostou"
+                            value="3"
+                        >
+                        <span>😐 Foi legal</span>
+                    </label>
+
+                    <label class="opcao">
+                        <input
+                            type="radio"
+                            name="gostou"
+                            value="2"
+                        >
+                        <span>👎 Poderia melhorar</span>
+                    </label>
+
+                </div>
+
+            </section>
+
+
+            <!-- PERGUNTA 2 -->
+
+            <section class="bloco">
+
+                <h2>03 // TEMA</h2>
+
+                <p class="pergunta">
+                    O tema Star Wars combinou com o trabalho?
+                </p>
+
+                <div class="opcoes">
+
+                    <label class="opcao">
+                        <input
+                            type="radio"
+                            name="tema"
+                            value="5"
+                            required
+                        >
+                        <span>⭐ Muito!</span>
+                    </label>
+
+                    <label class="opcao">
+                        <input
+                            type="radio"
+                            name="tema"
+                            value="4"
+                        >
+                        <span>👍 Sim</span>
+                    </label>
+
+                    <label class="opcao">
+                        <input
+                            type="radio"
+                            name="tema"
+                            value="3"
+                        >
+                        <span>😐 Mais ou menos</span>
+                    </label>
+
+                </div>
+
+            </section>
+
+
+            <!-- PERGUNTA 3 -->
+
+            <section class="bloco">
+
+                <h2>04 // APRENDIZADO</h2>
+
+                <p class="pergunta">
+                    Você aprendeu algo novo com o trabalho?
+                </p>
+
+                <div class="opcoes">
+
+                    <label class="opcao">
+                        <input
+                            type="radio"
+                            name="aprendizado"
+                            value="5"
+                            required
+                        >
+                        <span>🧠 Sim, bastante</span>
+                    </label>
+
+                    <label class="opcao">
+                        <input
+                            type="radio"
+                            name="aprendizado"
+                            value="4"
+                        >
+                        <span>📚 Sim</span>
+                    </label>
+
+                    <label class="opcao">
+                        <input
+                            type="radio"
+                            name="aprendizado"
+                            value="3"
+                        >
+                        <span>😐 Um pouco</span>
+                    </label>
+
+                </div>
+
+            </section>
+
+
+            <!-- PERGUNTA 4 -->
+
+            <section class="bloco">
+
+                <h2>05 // EXPERIÊNCIA</h2>
+
+                <p class="pergunta">
+                    Como você avalia a apresentação?
+                </p>
+
+                <select id="avaliacao" required>
+
+                    <option value="">
+                        Selecione uma opção
+                    </option>
+
+                    <option value="5">
+                        ⭐⭐⭐⭐⭐ Excelente
+                    </option>
+
+                    <option value="4">
+                        ⭐⭐⭐⭐ Muito boa
+                    </option>
+
+                    <option value="3">
+                        ⭐⭐⭐ Boa
+                    </option>
+
+                    <option value="2">
+                        ⭐⭐ Pode melhorar
+                    </option>
+
+                    <option value="1">
+                        ⭐ Precisa melhorar
+                    </option>
+
+                </select>
+
+            </section>
+
+
+            <!-- PERGUNTA 5 -->
+
+            <section class="bloco">
+
+                <h2>06 // COMUNICAÇÃO</h2>
+
+                <p class="pergunta">
+                    A apresentação foi fácil de entender?
+                </p>
+
+                <div class="opcoes">
+
+                    <label class="opcao">
+                        <input
+                            type="radio"
+                            name="entendimento"
+                            value="5"
+                            required
+                        >
+                        <span>✅ Sim</span>
+                    </label>
+
+                    <label class="opcao">
+                        <input
+                            type="radio"
+                            name="entendimento"
+                            value="3"
+                        >
+                        <span>😐 Mais ou menos</span>
+                    </label>
+
+                    <label class="opcao">
+                        <input
+                            type="radio"
+                            name="entendimento"
+                            value="1"
+                        >
+                        <span>❌ Não</span>
+                    </label>
+
+                </div>
+
+            </section>
+
+
+            <!-- COMENTÁRIO -->
+
+            <section class="bloco">
+
+                <h2>07 // MENSAGEM FINAL</h2>
+
+                <p class="pergunta">
+                    Deixe uma sugestão ou comentário:
+                </p>
+
+                <textarea
+                    id="comentario"
+                    placeholder="Sua opinião..."
+                    maxlength="300"
+                ></textarea>
+
+            </section>
+
+
+            <!-- BOTÃO -->
+
+            <button type="submit">
+
+                🚀 ENVIAR FEEDBACK
+
+            </button>
+
+        </form>
+
+
+        <!-- RESULTADO -->
+
+        <section
+            id="resultado"
+            class="resultado escondido"
+        >
+
+            <div class="resultado-icon">
+                ★
+            </div>
+
+            <h2>MISSÃO CONCLUÍDA!</h2>
+
+            <p id="mensagemResultado"></p>
+
+            <button
+                type="button"
+                onclick="novoFeedback()"
+            >
+                NOVO FEEDBACK
+            </button>
+
+        </section>
+
+
+        <!-- RODAPÉ -->
+
+        <footer>
+
+            <p>
+                CONEXÃO CEEP • 2º ANO
+            </p>
+
+            <p>
+                QUE A FORÇA ESTEJA COM VOCÊ!
+            </p>
+
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
